@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Crop Prediction Analysis</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <center><h1 style="color:white">Crop Prediction </h1></center>
+  <body style="background-color:black ;color:white">
+    <div class="container">
+      <form action = "/predict" method="POST">
+	  <div class="form-group">
+          <label for="n">Nitrogen</label>
+          <input type="text" class="form-control" placeholder="Enter N Value" name="n">
+        </div>
+		<div class="form-group">
+          <label for="p">Phosprous</label>
+          <input type="text" class="form-control" placeholder="Enter P Value" name="p">
+        </div>
+		<div class="form-group">
+          <label for="k">Potassium</label>
+          <input type="text" class="form-control" placeholder="Enter K Value" name="k">
+        </div>
+        <div class="form-group">
+          <label for="temp">Temperature:</label>
+          <input type="text" class="form-control" placeholder="Enter temperature" name="temp">
+        </div>
+        <div class="form-group">
+          <label for="humidity">Humidity:</label>
+          <input type="text" class="form-control" placeholder="Enter Humidity" name="humidity">
+        </div>
+        <div class="form-group">
+          <label for="ph">ph:</label>
+          <input type="text" class="form-control" placeholder="Enter ph" name="ph">
+        </div>
+        <div class="form-group">
+          <label for="rainfall">Rainfall:</label>
+          <input type="text" class="form-control" placeholder="Enter rainfall" name="rainfall">
+        </div>
+        <center><input style="margin-top:40px;background-color:#3333FF; color:white; text-size:16px;padding: 6px 12px;" type="submit"></center>
+      </form>
+    </div>
+</body>
+</html>
